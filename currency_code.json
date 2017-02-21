@@ -1,14 +1,129 @@
 {
     "code": [
         {
-            "name": "United States Dollars",
+            "name": "Netherlands Antillean Guilder",
+            "letter": "ANG",
+            "symbol": "NAf"
+        },
+        {
+            "name": "Angolan Kwanza",
+            "letter": "AOA",
+            "symbol": "Kz"
+        },
+        {
+            "name": "Australian Dollar",
+            "letter": "AUD",
+            "symbol": "A$"
+        },
+        {
+            "name": "Bosnia-Herzegovina Convertible Mark",
+            "letter": "BAM",
+            "symbol": "KM"
+        },
+        {
+            "name": "Brazilian Real",
+            "letter": "BRL",
+            "symbol": "R$"
+        },
+        {
+            "name": "Bitcoin",
+            "letter": "XBT",
+            "symbol": "BTC"
+        },
+        {
+            "name": "Canadian Dollar",
+            "letter": "CAD",
+            "symbol": "C$"
+        },
+        {
+            "name": "Congolese Franc",
+            "letter": "CDF",
+            "symbol": "FC"
+        },
+        {
+            "name": "Swiss Franc",
+            "letter": "CHF",
+            "symbol": "CHF"
+        },
+        {
+            "name": "Chinese Yuan",
+            "letter": "CNY",
+            "symbol": "¥"
+        },
+        {
+            "name": "Euro",
+            "letter": "EUR",
+            "symbol": "€"
+        },
+        {
+            "name": "British Pound Sterling",
+            "letter": "GBP",
+            "symbol": "£"
+        },
+        {
+            "name": "Czech Republic Koruna",
+            "letter": "CZK",
+            "symbol": "Kč"
+        },
+        {
+            "name": "Ghanaian Cedi",
+            "letter": "GHS",
+            "symbol": "GH₵"
+        },
+        {
+            "name": "Hong Kong Dollar",
+            "letter": "HKD",
+            "symbol": "HK$"
+        },
+        {
+            "name": "Indian Rupee",
+            "letter": "INR",
+            "symbol": "₹"
+        },
+        {
+            "name": "Icelandic Króna",
+            "letter": "ISK",
+            "symbol": "kr"
+        },
+        {
+            "name": "Kenyan Shilling",
+            "letter": "KES",
+            "symbol": "KSh"
+        },
+        {
+            "name": "North Korean Won",
+            "letter": "KPW",
+            "symbol": "₩"
+        },
+        {
+            "name": "Mexican Peso",
+            "letter": "MXN",
+            "symbol": "Mex$"
+        },
+        {
+            "name": "Malaysian Ringgit",
+            "letter": "MYR",
+            "symbol": "RM"
+        },
+        {
+            "name": "Nigerian Naira",
+            "letter": "NGN",
+            "symbol": "₦"
+        },
+        {
+            "name": "Norwegian Krone",
+            "letter": "MXN",
+            "symbol": "Mex$"
+        },
+        {
+            "name": "United States Dollar",
             "letter": "USD",
             "symbol": "$"
         },
         {
-            "name": "United Arab Emirates Dirham",
-            "letter": "AED",
-            "symbol": "#"
+            "name": "South African Rand",
+            "letter": "ZAR",
+            "symbol": "R"
         }
     ]
 }
