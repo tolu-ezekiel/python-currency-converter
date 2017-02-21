@@ -11,7 +11,11 @@ Options:
 """
 
 from docopt import docopt
+import json
 
+with open('currency_code.json') as data_file:    
+    currency_code = json.load(data_file)
+    
 
 def main():
     arguments = docopt(__doc__)
