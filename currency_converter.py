@@ -55,14 +55,14 @@ def main():
             output_currency = check_currency_code(currency_code, output_currency , total_code)
         conversion_result = convert_currency(input_currency, output_currency, amount)
         result['output'].update({str(output_currency): conversion_result})
-        print result
+        print json.dumps(result, sort_keys=True, indent=4)
     else:
         for i in range(total_code):
             output_currency = currency_code['code'][i]['letter']
             if output_currency != input_currency:
                 conversion_result = convert_currency(input_currency, output_currency, amount)
                 result['output'].update({str(output_currency): conversion_result})
-        print result
+        print json.dumps(result, sort_keys=True, indent=4)
 
 
 if __name__ == '__main__':
