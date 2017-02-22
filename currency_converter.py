@@ -2,7 +2,7 @@
 
 """
 Usage:
-    new2.py [--amount=<amount>] [--input_currency=<input_currency>] [--output_currency=<output_currency>] 
+    currency_converter.py [--amount=<amount>] [--input_currency=<input_currency>] [--output_currency=<output_currency>] 
 
 Options:
     --amount=<amount>                       Amount
