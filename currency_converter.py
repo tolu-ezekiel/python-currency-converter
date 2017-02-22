@@ -45,7 +45,7 @@ def main():
     result = {
         "input": {
             "amount": amount,
-            "currency": input_currency
+            "currency": str(input_currency)
         },
         "output": {
         }
@@ -54,14 +54,14 @@ def main():
         if output_currency.isalpha() == False or len(output_currency) < 3:
             output_currency = check_currency_code(currency_code, output_currency , total_code)
         conversion_result = convert_currency(input_currency, output_currency, amount)
-        result['output'].update({output_currency: conversion_result})
+        result['output'].update({str(output_currency): conversion_result})
         print result
     else:
         for i in range(total_code):
             output_currency = currency_code['code'][i]['letter']
             if output_currency != input_currency:
                 conversion_result = convert_currency(input_currency, output_currency, amount)
-                result['output'].update({output_currency: conversion_result})
+                result['output'].update({str(output_currency): conversion_result})
         print result
 
 
