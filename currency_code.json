@@ -27,7 +27,7 @@
         },
         {
             "name": "Bitcoin",
-            "letter": "XBT",
+            "letter": "BTC",
             "symbol": "BTC"
         },
         {
@@ -48,7 +48,12 @@
         {
             "name": "Chinese Yuan",
             "letter": "CNY",
-            "symbol": "¥"
+            "symbol": "C¥"
+        },
+        {
+            "name": "Japanese Yuan",
+            "letter": "JPY",
+            "symbol": "J¥"
         },
         {
             "name": "Euro",
@@ -109,11 +114,6 @@
             "name": "Nigerian Naira",
             "letter": "NGN",
             "symbol": "₦"
-        },
-        {
-            "name": "Norwegian Krone",
-            "letter": "MXN",
-            "symbol": "Mex$"
         },
         {
             "name": "United States Dollar",

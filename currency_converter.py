@@ -13,6 +13,7 @@ Options:
 from docopt import docopt
 import json
 import requests
+import re
 
 with open('currency_code.json') as data_file:    
     currency_code = json.load(data_file)
@@ -25,13 +26,17 @@ def check_currency_code(currency_code, currency, total_code):
     return currency
 
 def convert_currency(input_currency, output_currency, amount):
-    token = "0EFC588CBFB84BE9B5E63D7372B6B719"
-    r = requests.get('http://globalcurrencies.xignite.com/xGlobalCurrencies.json/ConvertRealTimeValue?_token='+ token +'&From='+ input_currency +'&To=' + output_currency +'&Amount=' + amount)
-    if json.loads(r.content)['Outcome'] == 'Success':
-        conversion_result = json.loads(r.content)['Result']
-        return conversion_result
+    r = requests.get('https://www.google.com/finance/converter?a={}&from={}&to={}'.format(amount, input_currency, output_currency))
+    if r.status_code == 200:
+        data = r.content
+        try:
+            fetch_result = re.findall ('<span class=bld>(.*?) '+output_currency+'</span>', data, re.DOTALL )
+            conversion_result = float("".join(fetch_result).replace('\n',' '))
+            return conversion_result
+        except:
+            return 'enter another output currency'
     else:
-        return json.loads(r.content)['Outcome']
+        return 'try again later'
 
 def main():
     arguments = docopt(__doc__)

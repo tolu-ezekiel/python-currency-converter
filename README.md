@@ -1,3 +1,5 @@
-* I used the trial version API from www.xignite.com and I have less than 200 requests left so might not work again after that many requests.
+Example usage:
 
-Thanks
+* ./currency_converter.py --amount 100 --input_currency $ --output_currency £
+* ./currency_converter.py --amount 100 --input_currency USD --output_currency NGN
+* ./currency_converter.py --amount 100 --input_currency AUD --output_currency €
